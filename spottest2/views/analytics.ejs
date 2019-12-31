@@ -34,7 +34,7 @@
       <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Hadleigh's Spotify API App</a>
+        <a class="navbar-brand" href="/main_page">Hadleigh's Spotify API App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +43,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/analytics">Analytics</a>
             </li>
+            <!--
             <li class="nav-item">
               <a class="nav-link" href="/discover">Discover</a>
             </li>
@@ -52,6 +53,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/ele">Enhanced Listening Experience</a>
             </li>
+          -->
           </ul>
         </div>
       </div>
@@ -84,7 +86,7 @@
         cell2 = row.insertCell(1);
         var name_stuff = "<a style = 'color:White;' href="+uris[i]+">"+stuff[i].name+"</a>";
         cell1.innerHTML = name_stuff;
-        cell2.innerHTML = "<img src =" + stuff[i].images[0].url + " width = 200 height=200 >"; 
+        cell2.innerHTML = "<img src =" + stuff[i].images[0].url + " max-width = 100% height=auto >"; 
       }
     </script>
 

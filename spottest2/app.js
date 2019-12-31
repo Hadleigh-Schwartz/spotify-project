@@ -192,6 +192,7 @@ app.get("/analytics", function(req, res){
   console.log('opening analytics page');
   res.render('analytics', {stuff: top_tracks_info, uris:uris})
 
+
   // your application requests refresh and access tokens
   // after checking the state parameter
 
@@ -255,6 +256,11 @@ app.get("/analytics", function(req, res){
   
   }*/
    
+});
+
+app.get("/coming_soon", function(req, res){
+  console.log('opening coming soon');
+  res.render('coming_soon')
 });
 
 
